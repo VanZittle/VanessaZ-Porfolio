@@ -17,6 +17,10 @@ h1{
     color: var(--lightTheme);
     margin-bottom: 10px;
 }
+h2{
+    font-size: 180%;
+    text-align: right;
+}
 nav{
     background: var(--ufoColor);
     height: 80px;
@@ -45,12 +49,13 @@ nav ul li{
 nav ul li a{
     color: var(--lightTheme);
     font-size: 17px;
-    padding: 7px 13px;
+    padding: 10px 15px;
     text-transform: uppercase;
 }
 li a.active, li a:hover{
     background-color: var(--darkTheme);
     transition: .5s;
+    border-radius: 20px;
 }
 /* styling for menu button when a smaller screen is displaying the portfolio */
 .checkbtn{
@@ -70,39 +75,44 @@ header{
     height: 300px;
     background: var(--darkTheme);
     background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(47,47,47,1) 100%);
-    padding: 10%;
+    padding: 5% 10%;
     
 }
 .btnRound{
     border: none;
     letter-spacing: 2px;
-    font-size: 12px;
+    font-size: 18x;
     background-color: var(--ufoColor);
     color: var(--darkTheme);
     border-radius: 70px;
-    padding: 15px;
+    padding: 15px 25px 15px 30px;
     text-transform: uppercase;
     font-weight: 500;
     margin-top: 20px;
     position: absolute;
 }
-.btnRound svg{
-    width: 30px;
-    height: 30px;
-    margin-left: 20px;
-    background-color: var(--darkTheme);
+.btnRound i{
+    margin-left: 15px;
+    font-size: 25px;
 }
 main{
-
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+aside{
+    flex: 1;
+    padding: 20px;
 }
 section{
-
-}
-.sectionContent{
+    flex: 3;
+    padding: 20px;
     border-left: 2px solid var(--ufoColor);
 }
+.sectionContent{
+}
 .aboutMe{
-    border-left: 2px solid --ufoColor;
+
 }
 .aboutMe img{
     width: 200px;
