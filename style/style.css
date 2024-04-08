@@ -154,6 +154,7 @@ aside p{
     grid-gap:10px;
 }
 .grid-item{
+    position: relative;
 }
  .grid-container img{ 
     width: 100%;
@@ -175,6 +176,25 @@ aside p{
 .grid-item-5{
     grid-row: span 1;
 }
+.overlay{
+    position: absolute;
+    bottom: 4px;
+    background: rgba(0, 0, 0, 0.8); /* Black see-through */
+    width: 100%;
+    transition: .5s ease;
+    opacity:0;
+    color: var(--lightTheme);
+    font-size: 20px;
+    text-align: center;
+    height: 300px;
+}
+.grid-item:hover .overlay {
+    opacity: 1;
+}
+.grid-item h3{
+    position: relative;
+    top:130px;
+}
 /* styling for Contact section */
 label{
     display:inline-block;
@@ -183,6 +203,7 @@ input, textarea{
     padding: 7px;
     color: var(--ufoColor);
     width: 600px;
+    font-weight: 200;
 }
 form ul li{
     margin:10px;
@@ -259,6 +280,9 @@ footer p{
     }
     .grid-container{
         display: block;
+    }
+    .grid-item{
+        margin-top: 20px;
     }
     #resume aside{
         display: flex;
