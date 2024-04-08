@@ -35,7 +35,7 @@
         </h1>
         <span style="color: var(--lightTheme);font-size: 150%;">I'm a web designer and developer.<br>
         Let's work together!</span><br> 
-        <div><a href="#" class="btnRound">Say hello <i class="fa fa-arrow-right"></i></a></div>
+        <div><a href="#resume" class="btnRound">Say hello <i class="fa fa-arrow-right"></i></a></div>
     </header>
     <!-- Starts main container -->
     <main>
@@ -43,7 +43,7 @@
         <section id="aboutMe" class="justify-center row">
             <h2>About me</h2>
             <aside>
-                <img class="profilePic" src="images/profileImg.png" />
+                <img class="profilePic" src="images/profileImg.png" alt="Vanessa's avatar profile"/>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </aside>
         </section>
@@ -70,9 +70,12 @@
                         <label class="" for="email">Email:</label>
                         <input type="text" id="email" name="user-email">
                       </li>
+                      <li>
+                        <textarea rows="4" cols="50" id="message" name="user-message" placeholder="Do you need a quote? Would you like to discuss a project? Anything, just send me a message!"></textarea>
+                      </li>
                     </ul>
                     <div class="">
-                      <button type="submit">SEND</button>
+                      <button type="submit" class="btnRound2">SEND</button>
                     </div>
                   </form>
             </aside>
@@ -81,7 +84,8 @@
         <!-- Resume section starts-->
         <section id="resume">
             <h2>My resume</h2>
-            <aside>
+            <aside style="min-height: 70px;">
+                <p>You can easily download my resume <a href="images/resumeSample.pdf" download="newfilename">here</a>!</p>
 
             </aside>
         </section>

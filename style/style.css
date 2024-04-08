@@ -20,6 +20,9 @@ h1{
 h2{
     font-size: 180%;
 }
+a{
+    cursor: pointer;
+}
 nav{
     background: var(--ufoColor);
     height: 80px;
@@ -77,16 +80,18 @@ header{
     padding: 5% 10%;
     
 }
-.btnRound{
+.btnRound, .btnRound2{
     border: none;
     letter-spacing: 2px;
-    font-size: 18px;
     background-color: var(--ufoColor);
     color: var(--darkTheme);
     border-radius: 70px;
-    padding: 15px 25px 15px 30px;
     text-transform: uppercase;
     font-weight: 500;
+}
+.btnRound{
+    font-size: 18px;
+    padding: 15px 25px 15px 30px;
     margin-top: 20px;
     position: absolute;
 }
@@ -94,21 +99,25 @@ header{
     margin-left: 15px;
     font-size: 25px;
 }
+.btnRound2{
+    font-size: 15px;
+    padding: 10px 15px;
+    margin-left: 10px;
+
+}
 main{
     margin: 40px;
 }
 section{
     display: flex;
     align-items: center;
+    margin-top: 20px;
 }
 .justify-center{
     justify-content: center;
 }
 .row {
-    display: flex;
     flex-direction: row;
-    margin-left: -1.5rem;
-    margin-right: -1.5rem;
 }
 section h2{
     margin-right: 20px;
@@ -120,7 +129,8 @@ aside{
     display: flex;
     width: 80%;
     align-items: center;
-    }
+    padding: 0 15px;
+}
 aside p{
     font-weight: 200;
 }
@@ -129,10 +139,18 @@ aside p{
     height: 150px;
     clip-path: circle(50% at center);
     border: 2px solid;
-    margin: 0 20px;
+    margin-right: 20px;
 }
 label{
     display:inline-block;
+}
+input, textarea{
+    padding: 7px;
+    color: var(--ufoColor);
+    width: 600px;
+}
+form ul li{
+    margin:10px;
 }
 footer{
     background-color: var(--darkTheme);
@@ -155,7 +173,7 @@ footer p{
     .checkbtn{
         display: block;
     }
-    ul{
+    nav ul{
         position: fixed;
         width: 100%;
         height: 100vh;
@@ -180,5 +198,26 @@ footer p{
     }
     #check:checked ~ ul{
         left: 0;
+    }
+    input, textarea{
+        width: 100%;
+    }
+}
+@media  (max-width: 700px){
+    aside{
+        display: flow;
+    }
+}
+@media  (max-width: 450px){
+    section{
+        display: block;
+    }
+    section h2 {
+        text-align: left;
+        width: 100%;
+        margin-bottom:15px ;
+    }
+    aside{
+        width: 100%;
     }
 }
