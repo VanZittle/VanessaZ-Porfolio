@@ -23,9 +23,9 @@
         </a>
         <ul>
             <li><a href="#" class="active">About me</a></li>
-            <li><a href="#">Work</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Resume</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#resume">Resume</a></li>
         </ul>
     </nav>
     <!-- Ends nav links -->
@@ -39,29 +39,55 @@
     </header>
     <!-- Starts main container -->
     <main>
-        <!-- <div class="area" >
-            <ul class="circles">
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-            </ul>
-        </div > -->
-        <aside>
+        <!-- About me section starts -->
+        <section id="aboutMe" class="justify-center row">
             <h2>About me</h2>
-        </aside>
-        <section>
-            <div class="aboutMe">
-                <img src="images/profileImg.png" />
+            <aside>
+                <img class="profilePic" src="images/profileImg.png" />
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
+                </aside>
         </section>
+        <!-- About me section ends -->
+        <!-- Work section starts -->
+        <section id="work">
+            <h2>Work</h2>
+            <aside>
+
+            </aside>
+        </section>
+        <!-- Work section ends -->
+        <!-- Contact section starts -->
+        <section id="contact">
+            <h2>Contact</h2>
+            <aside>
+                <form>
+                    <ul>
+                      <li>
+                        <label class="" for="name">Name:</label>
+                        <input type="text" id="name" name="user-name">
+                      </li>
+                      <li>
+                        <label class="" for="email">Email:</label>
+                        <input type="text" id="email" name="user-email">
+                      </li>
+                    </ul>
+                    <div class="">
+                      <button type="submit">SEND</button>
+                    </div>
+                  </form>
+            </aside>
+        </section>
+        <!-- Contact section ends -->
+        <!-- Resume section starts-->
+        <section id="resume">
+            <h2>My resume</h2>
+            <aside>
+
+            </aside>
+        </section>
+
+        <!-- Resume section ends -->
+
     </main>
     <!-- Ends main container -->
     <!-- Starts footer -->
