@@ -27,7 +27,8 @@ nav{
     background: var(--ufoColor);
     height: 80px;
     width: 100%;
-    position: relative;
+    position: fixed;
+    top:0;
     z-index: 10000;
 }
 /* defines size and position of first logo */
@@ -72,13 +73,14 @@ li a.active, li a:hover{
 #check{
     display: none;
 }
+/* styles for header and its content */
 header{
     width: 100%;
     height: 300px;
     background: var(--darkTheme);
     background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(47,47,47,1) 100%);
     padding: 5% 10%;
-    
+    margin-top: 80px;
 }
 .btnRound, .btnRound2{
     border: none;
@@ -99,12 +101,16 @@ header{
     margin-left: 15px;
     font-size: 25px;
 }
+/* button for contact */
 .btnRound2{
     font-size: 15px;
     padding: 10px 15px;
     margin-left: 10px;
-
 }
+.btnRound2 a{
+    color: var(--darkTheme);
+}
+/* Flexbox for aligning the sections and its content */
 main{
     margin: 40px;
 }
@@ -125,7 +131,7 @@ section h2{
     width: 20%;
 }
 aside{
-    border-left: 4px solid var(--ufoColor);
+    border-left: 2px solid var(--ufoColor);
     display: flex;
     width: 80%;
     align-items: center;
@@ -138,9 +144,38 @@ aside p{
     width: 150px;
     height: 150px;
     clip-path: circle(50% at center);
-    border: 2px solid;
     margin-right: 20px;
 }
+/* Stylying for Work section, I used grid to display my projects easily */
+.grid-container{
+    display: grid;
+    grid-template-columns: 50%;
+    grid-auto-rows: minmax(150px, auto);
+    grid-gap:10px;
+}
+.grid-item{
+}
+ .grid-container img{ 
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+} 
+.grid-item-1{
+    grid-column: span 2;
+}
+.grid-item-2{
+    grid-row: span 1;
+}
+.grid-item-3{
+    grid-row: span 1;
+}
+.grid-item-4{
+    grid-row: span 1;
+}
+.grid-item-5{
+    grid-row: span 1;
+}
+/* styling for Contact section */
 label{
     display:inline-block;
 }
@@ -152,6 +187,7 @@ input, textarea{
 form ul li{
     margin:10px;
 }
+/* Style for footer and its content */
 footer{
     background-color: var(--darkTheme);
     padding: 10px;
@@ -204,11 +240,15 @@ footer p{
     }
 }
 @media  (max-width: 700px){
+    section #work{
+        align-items: start;
+    }
     aside{
         display: flow;
+        border-bottom: 2px solid var(--ufoColor);
+        width: 100%;
+        padding-bottom: 15px;
     }
-}
-@media  (max-width: 450px){
     section{
         display: block;
     }
@@ -217,7 +257,10 @@ footer p{
         width: 100%;
         margin-bottom:15px ;
     }
-    aside{
-        width: 100%;
+    .grid-container{
+        display: block;
+    }
+    #resume aside{
+        display: flex;
     }
 }
