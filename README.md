@@ -27,7 +27,7 @@ THEN I am presented with a responsive layout that adapts to my viewport
 
 ## Go to my project
 
-To visit and review my project, [click here](hhttps://vanzittle.github.io/module2-challenge-portfolioVanessa/)
+To visit and review my project, [click here](https://vanzittle.github.io/module2-challenge-portfolioVanessa/)
 
 ## Visual reference of project
 The following image demonstrates the website's appearance:
